@@ -38,7 +38,14 @@ One school library app to record what books are in the library and who borrows t
 
 ## 🛠 Built With <a name="built-with"></a>
 
-  - Ruby
+### Tech Stack <a name="tech-stack"></a>
+- Ruby
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://www.ruby-lang.org/en/downloads/">Ruby</></li>
+  </ul>
+</details>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -53,13 +60,59 @@ One school library app to record what books are in the library and who borrows t
 To get a local copy up and running follow these simple example steps.
 ### Setup
 
-Clone this repository to your desired folder:
-`cd my-folder`
-`git clone git@github.com:joramot/oop_school_library.git`
 
 To run the project execute the command below
 `ruby person.rb`
 
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+> You need the following tools be installed in your computer:
+
+> - [Git](https://www.linode.com/docs/guides/how-to-install-git-on-linux-mac-and-windows/)
+> - [Ruby](https://github.com/microverseinc/curriculum-ruby/blob/main/simple-ruby/articles/ruby_installation_instructions.md)
+> - IDE
+> - Etc
+
+### Setup
+
+Clone this repository to your desired folder:
+
+```sh
+  cd my-prefered-folder
+  git clone git@github.com:joramot/oop_school_library.git
+
+```
+
+### Install
+
+Install this project with:
+
+```sh
+  cd school-library
+  
+  bundle install
+```
+
+### Usage
+
+To run the project, execute the following command:
+
+```sh
+  ruby main.rb
+```
+
+### Run tests
+
+To run tests, run the following command:
+
+```sh
+  rspec spec/
+```
+...
 
 
 ## 👥 Author <a name="authors"></a>
