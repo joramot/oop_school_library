@@ -11,10 +11,10 @@ class Person
 
   def can_use_services?
     false unless of_age? && parent_permission == true
-  end 
+  end
 
   private
-  
+
   def of_age?
     false unless of_age? >= 18
   end
