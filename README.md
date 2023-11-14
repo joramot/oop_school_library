@@ -30,12 +30,6 @@ One school library app to record what books are in the library and who borrows t
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [To be updated]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -64,18 +58,6 @@ To get a local copy up and running follow these simple example steps.
 To run the project execute the command below
 `ruby person.rb`
 
-## Getting Started
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-> You need the following tools be installed in your computer:
-
-> - [Git](https://www.linode.com/docs/guides/how-to-install-git-on-linux-mac-and-windows/)
-> - [Ruby](https://github.com/microverseinc/curriculum-ruby/blob/main/simple-ruby/articles/ruby_installation_instructions.md)
-> - IDE
-> - Etc
 
 ### Setup
 
