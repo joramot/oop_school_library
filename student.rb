@@ -8,8 +8,9 @@ class Student < Person
     '¯(ツ)/¯'
   end
 
-  def enroll(classroom)
-    @classroom = classroom
-    classroom.students << self unless classroom.students.include?(self)
+attr_reader :classroom
+  def classroom=(classroom)
+      @classroom = classroom
+      classroom.students.push(self) unless classroom.students.include?(self)
   end
 end
