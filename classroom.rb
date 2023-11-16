@@ -1,4 +1,4 @@
-class Classroom
+ attr_reader :students
   def initialize(label)
     @label = label
     @students = []
