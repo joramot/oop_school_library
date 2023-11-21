@@ -5,6 +5,10 @@ require_relative 'teacher'
 require_relative 'classroom'
 
 class App
+  # Defined constants for better readability for person types.
+  STUDENT = :student
+  TEACHER = :teacher
+
   def initialize
     @books = []
     @people = []
@@ -26,28 +30,31 @@ class App
   def create_person
     print 'Do you want to create a student (1) or a teacher (2)? [enter the number]: '
     person_type = gets.chomp
-    if person_type != '1' && person_type != '2'
-      puts 'Person type not recognized. Back to the main menu.'
-      return
+    # Replaced the if-else block for creating a person with a case statement for better readability.
+    case person_type
+    when '1' then create_person_by_type(STUDENT)
+    when '2' then create_person_by_type(TEACHER)
+    else puts 'Person type not recognized. Back to the main menu.'
     end
+  end
 
+  # a method is added to create a person based on their type
+  def create_person_by_type(type)
     print 'Name: '
     name = gets.chomp
     print 'Age: '
-    age = gets.chomp
+    age = gets.chomp.to_i
 
-    if person_type == '1'
-      create_student(name, age)
-    elsif person_type == '2'
-      create_teacher(name, age)
+    case type
+    when STUDENT then create_student(name, age)
+    when TEACHER then create_teacher(name, age)
     end
   end
 
   def create_student(name, age)
     print 'Has parent permission? [Y/N]: '
-    parent_permission = gets.chomp.downcase
-    parent_permission = true if parent_permission == 'y'
-    parent_permission = false if parent_permission == 'n'
+    # Simplified the assignment of parent_permission as a boolean.
+    parent_permission = gets.chomp.downcase == 'y'
     person = Student.new(age, nil, name: name, parent_permission: parent_permission)
     @people << person
     puts 'Student created successfully'
