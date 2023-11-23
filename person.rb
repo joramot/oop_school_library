@@ -12,6 +12,15 @@ class Person < Nameable
     @rentals = []
   end
 
+  def to_h
+    {
+      'id' => @id,
+      'name' => @name,
+      'age' => @age,
+      'parent_permission' => @parent_permission
+    }
+  end
+
   def can_use_services?
     false unless of_age? && parent_permission == true
   end
